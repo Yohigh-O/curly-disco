@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Order Form</h1>
+  <form id="order-form">
+    <label for="item">Select Item:</label>
+    <select id="item" name="item">
+      <option value="Pizza">Pizza</option>
+      <option value="Burger">Burger</option>
+      <option value="Pasta">Pasta</option>
+    </select>
+
+    <label for="delivery-location">Delivery Location:</label>
+    <input type="text" id="delivery-location" name="delivery-location" placeholder="Enter your address">
+
+    <button type="button" id="submit-button">Submit Order</button>
+  </form>
+
+  <div id="order-details">
+    <h2>Order Details:</h2>
+    <p>Selected Item: <span id="selected-item"></span></p>
+    <p>Delivery Location: <span id="selected-location"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
